@@ -4,7 +4,8 @@ const axios = require('axios');
 
 
 class App extends Component {
-  ComponentDidMount() {
+  componentDidMount() {
+    console.log("componentDidMount");
     axios
           .get("/api/food")
           .then(res => {
@@ -19,6 +20,7 @@ class App extends Component {
 
     return (
       <div>
+      HELLO
       </div>
     );
   }
